@@ -1,0 +1,107 @@
+/* General Styles */
+:root {
+    --col1: #ddd;
+    --col2: #f5f5f5;
+    --col3: #6495ed;
+}
+
+body {
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+legend {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: var(--col1);
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+/* Form Styles */
+form {
+    margin: 2rem 0;
+}
+
+fieldset {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--col1);
+    padding: 2rem;
+}
+
+label,
+input,
+textarea {
+    padding: 0;
+    width: 100%;
+    line-height: 2rem;
+}
+
+input,
+textarea {
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    margin: .5rem 0 1.5rem 0;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--col1);
+}
+
+#submit-button {
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    border-radius: 3px;
+    background-color: var(--col3);
+    color: var(--col2);
+    padding: 0;
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: var(--col1);
+    color: var(--col3);
+}
+
+
+/* Responsive Design */
+/* Tablet: between 25rem and 40rem */
+@media screen and (min-width: 25rem) and (max-width: 40rem) {
+    #submit-button {
+        width: fit-content;
+        padding: 0 2.5rem;
+    }
+
+    .var {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+}
+
+/* Desktop: between 40rem and 50rem | max-width: 50rem */
+@media screen and (min-width: 40rem) and (max-width: 50rem) {
+    #submit-button {
+        width: fit-content;
+        padding: 0 2.5rem;
+    }
+    .var {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+}
